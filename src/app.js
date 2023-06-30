@@ -6,6 +6,6 @@ app.get('/', (req, res) => {
         "msg" : "Ruta Principal"
     })
 })
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Servidor iniciado");
 })
